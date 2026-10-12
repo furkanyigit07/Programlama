@@ -1,11 +1,26 @@
-# kullanıcılar dizisi oluşturuluyor oluşan dizi kullanıcı adı şifre ve email bilgilerini tutacak sözlük oluştur sözküğe en az bir veri girerek ekranda yazdırınız.
+fatura={
+    "Doğalgaz": 
+    {
+    "abone_no": 123,
+    "tutar": 500
+    },
+    "Elektrik":
+    {
+    "abone_no": 1234,
+    "tutar": 300
+    },
+    "Su":
+    {
+    "abone_no": 12345,
+    "tutar": 200
+    },
+    "İnternet": 
+    {
+    "abone_no": 123456,
+    "tutar": 100
+    }      
+}
+for i in fatura:
+    print(f"{i} faturası tutarı: {fatura[i]['tutar']}")
 
-
-kullanıcılar = []
-kullanıcı = {"kullanıcı_adı": "furkan123", "şifre": "12345", "gmail": "yigitfurkan474@gmail.com"}
-kullanıcılar.append(kullanıcı)
-girilen_veri = kullanıcılar[0]
-for kullanıcı in kullanıcılar:
-    print("Kullanıcı Adı:", kullanıcı["kullanıcı_adı"])
-    print("Şifre:", kullanıcı["şifre"])
-    print("Gmail:", kullanıcı["gmail"])
+#kullanıcıya kaç sayı girmesini sor sayılar adında bir tane dizi kullanıcıdının girdiği sayıları bu dizide tutularak yazdırılacak
